@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <paths>
+        <files-path path="files" name="files" />
+        <cache-path path="files" name="cache" />
+        <external-path path="files" name="external" />
+        <external-files-path path="files" name="externalfiles"/>
+        <!-- 此标签需要 support 25.0.0以上才可以使用-->
+        <external-cache-path  path="files" name="externalcache"/>
+    </paths>
+</resources>

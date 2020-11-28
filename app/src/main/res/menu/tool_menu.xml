@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_write"
+        android:icon="@drawable/write"
+        app:showAsAction="always"
+        android:title="@string/title_write"/>
+
+    <item
+        android:id="@+id/navigation_theme"
+        android:icon="@drawable/icon_theme_night"
+        app:showAsAction="ifRoom"
+        android:title="@string/more_theme"/>
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="@string/title_settings"/>
+
+</menu>

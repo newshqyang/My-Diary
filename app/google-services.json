@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "188036527372",
+    "firebase_url": "https://mydiary-96ba6.firebaseio.com",
+    "project_id": "mydiary-96ba6",
+    "storage_bucket": "mydiary-96ba6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188036527372:android:d0e9e39d21c2dceb844529",
+        "android_client_info": {
+          "package_name": "com.swsbt.secret"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188036527372-ecr26sfr5if81fvkkvtkns4ko2dif38j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6002r5HVml1KkdsR28QWGDd00TF7FHsc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188036527372-ecr26sfr5if81fvkkvtkns4ko2dif38j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

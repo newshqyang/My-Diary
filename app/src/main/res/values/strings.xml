@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">日记</string>
+
+    <string name="search_warning">在此输入…</string>
+    <string name="delete_warning">确定要删除吗？</string>
+
+    <string name="backup_notice">换手机了，如何在新手机中继续写日记呢？\n\n\n只需三步！\n\n第一步:\n将旧手机通过数据线与电脑连接，在电脑上进入手机的SD卡(外部存储)，进入backup文件夹，将LockDiary文件夹整个复制到你的电脑上；\n\n第二步:\n将新手机通过数据线与电脑连接，在电脑上进入新手机的SD卡(外部存储)，进入backup文件夹，将电脑上的LockDiary文件夹整个粘贴到backup文件夹中；\n\n第三步:\n打开app，进入设置界面，点击“立即恢复”，完成。
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_write">写作</string>
+    <string name="title_settings">设置</string>
+
+    <string name="title_activity_image">查看图片</string>
+    <string name="more_theme">主题切换</string>
+
+    <string name="item_diary_delete_confirm">您确定要移除这篇日记吗？</string>
+    <string name="item_diary_edit_confirm">您确定要对自己写过的日记进行编辑吗？</string>
+</resources>

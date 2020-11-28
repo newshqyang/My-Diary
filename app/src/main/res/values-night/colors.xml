@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorNavigationBar">#d1e6e0</color>
+    <color name="colorTheme">#1296db</color>
+    <color name="colorTarBar">#ffffff</color>
+    <color name="colorBarFont">#0d6634</color>
+    <color name="colorFont">#8E8E8E</color>
+    <color name="colorHintFont">#70abdf</color>
+    <color name="colorMonthFont">#9eb5c9</color>
+    <color name="colorButton">#4d83c9</color>
+    <color name="colorLogin">#4d83c9</color>
+    <color name="colorDateline">#848484</color>
+    <color name="colorListViewBg">#f5eee8</color>
+    <color name="colorSpring">#00a13a</color>
+    <color name="colorSummer">#f79912</color>
+    <color name="colorAutumn">#a9080d</color>
+    <color name="colorLookTopBottom">#20558b</color>
+    <color name="colorGray">#E9E9E9</color>
+
+
+    <color name="anotherLightBg">#00FFFFFF</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="colorRice">#f8f6e7</color>
+    <color name="backgroundColor">#252525</color>
+    <color name="activityBackgroundColor">#000000</color>
+</resources>

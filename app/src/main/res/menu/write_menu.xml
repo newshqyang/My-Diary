@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/normal_diary"
+        android:title="常规" />
+    <item
+        android:id="@+id/avg_diary"
+        android:title="AVG风格" />
+</menu>
