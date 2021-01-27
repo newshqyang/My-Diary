@@ -1,4 +1,4 @@
-package com.swsbt.secret.adapter;
+package com.swsbt.secret.helper.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,8 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.swsbt.secret.R;
-import com.swsbt.secret.model.entity.AvgClip;
-import com.swsbt.secret.model.entity.AvgEditorViewHolder;
+import com.swsbt.secret.model.local.entity.AvgClip;
+import com.swsbt.secret.model.local.entity.AvgEditorViewHolder;
 import com.swsbt.secret.view.ImageActivity;
 
 import java.io.File;

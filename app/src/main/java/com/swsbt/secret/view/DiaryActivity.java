@@ -15,7 +15,7 @@ import com.swsbt.secret.R;
 import com.swsbt.secret.bll.SQLOperate;
 import com.swsbt.secret.dal.SQLConstant;
 import com.swsbt.secret.model.HomeButtonActivity;
-import com.swsbt.secret.model.entity.Diary;
+import com.swsbt.secret.model.local.entity.Diary;
 import com.swsbt.secret.util.CommonMethods;
 import com.swsbt.secret.util.DateUtils;
 import com.swsbt.secret.util.ImageUtils;

@@ -20,7 +20,7 @@ import com.swsbt.secret.dal.SQLConstant;
 import com.swsbt.secret.model.DatabaseHelper;
 import com.swsbt.secret.R;
 import com.swsbt.secret.model.HomeButtonActivity;
-import com.swsbt.secret.model.entity.AvgEditorBar;
+import com.swsbt.secret.model.local.entity.AvgEditorBar;
 import com.swsbt.secret.util.DateUtils;
 
 
@@ -130,7 +130,7 @@ public class WriteAvgActivity extends HomeButtonActivity implements View.OnClick
     跳转到日记列表
      */
     private void navigator() {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, OldMainActivity.class));
         overridePendingTransition(R.anim.normal, R.anim.left_exit);
         finishAfterTransition();
     }

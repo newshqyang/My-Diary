@@ -1,4 +1,4 @@
-package com.swsbt.secret.model.entity;
+package com.swsbt.secret.model.local.entity;
 
 public class MyLog {
     private String _id;

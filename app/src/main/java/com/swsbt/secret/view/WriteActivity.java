@@ -32,7 +32,7 @@ import com.swsbt.secret.dal.SQLConstant;
 import com.swsbt.secret.model.DatabaseHelper;
 import com.swsbt.secret.R;
 import com.swsbt.secret.model.HomeButtonActivity;
-import com.swsbt.secret.model.entity.Diary;
+import com.swsbt.secret.model.local.entity.Diary;
 import com.swsbt.secret.util.AndroidConfigUtils;
 import com.swsbt.secret.util.AndroidFileUtils;
 import com.swsbt.secret.util.CommonMethods;
@@ -396,7 +396,7 @@ public class WriteActivity extends HomeButtonActivity implements View.OnClickLis
     跳转到日记列表
      */
     private void navigator() {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, OldMainActivity.class));
         overridePendingTransition(R.anim.normal, R.anim.left_exit);
         finishAfterTransition();
     }

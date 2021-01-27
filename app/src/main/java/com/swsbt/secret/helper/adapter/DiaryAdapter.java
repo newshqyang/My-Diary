@@ -1,4 +1,4 @@
-package com.swsbt.secret.adapter;
+package com.swsbt.secret.helper.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -6,14 +6,13 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AnimationUtils;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.swsbt.secret.R;
-import com.swsbt.secret.model.entity.Diary;
-import com.swsbt.secret.model.entity.DiaryViewHolder;
+import com.swsbt.secret.model.local.entity.Diary;
+import com.swsbt.secret.model.local.entity.DiaryViewHolder;
 
 import java.util.Calendar;
 import java.util.List;
