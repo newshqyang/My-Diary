@@ -1,4 +1,4 @@
-package com.swsbt.secret.model.entity;
+package com.swsbt.secret.model.local.entity;
 
 import android.content.Context;
 import android.graphics.Bitmap;

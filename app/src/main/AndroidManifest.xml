@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.swsbt.secret">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        tools:targetApi="q">
-        <activity android:name=".view.WriteAvgActivity"
-            android:configChanges="orientation|keyboardHidden"/>
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.WriteAvgActivity"
+            android:configChanges="orientation|keyboardHidden" />
         <activity android:name=".view.AvgActivity" />
         <activity
             android:name=".view.ImageActivity"
@@ -34,8 +40,8 @@
         </provider>
 
         <activity
-            android:name=".view.MainActivity"
-            android:launchMode="singleTask" >
+            android:name=".view.OldMainActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,12 +50,12 @@
         </activity>
         <activity
             android:name=".view.WriteActivity"
-            android:launchMode="singleTask"
-            android:configChanges="orientation|keyboardHidden"/>
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask" />
         <activity
             android:name=".view.DiaryActivity"
             android:launchMode="singleTask"
-            android:theme="@style/SwipeBack.Transparent.Theme"/>
+            android:theme="@style/SwipeBack.Transparent.Theme" />
         <activity
             android:name=".view.SettingActivity"
             android:launchMode="singleTask"

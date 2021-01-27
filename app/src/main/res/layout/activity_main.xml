@@ -4,13 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/activityBackgroundColor"
-    tools:context=".view.MainActivity">
+    tools:context=".view.OldMainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/switch_page"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </androidx.recyclerview.widget.RecyclerView>
+        android:layout_height="match_parent"
+        tools:listitem="@layout/diary_item"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
