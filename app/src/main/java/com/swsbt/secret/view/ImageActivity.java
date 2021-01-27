@@ -12,7 +12,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.swsbt.secret.R;
-import com.swsbt.secret.model.entity.DragScaleView;
+import com.swsbt.secret.model.local.entity.DragScaleView;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.

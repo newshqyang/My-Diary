@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.swsbt.secret.dal.SQLConstant;
 import com.swsbt.secret.model.DatabaseHelper;
-import com.swsbt.secret.model.entity.Diary;
+import com.swsbt.secret.model.local.entity.Diary;
 
 public class SQLOperate {
 

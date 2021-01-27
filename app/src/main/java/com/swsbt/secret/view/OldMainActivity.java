@@ -20,9 +20,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.swsbt.secret.dal.DiaryConfig;
 import com.swsbt.secret.dal.SQLConstant;
 import com.swsbt.secret.model.HomeButtonActivity;
-import com.swsbt.secret.model.entity.Diary;
+import com.swsbt.secret.model.local.entity.Diary;
 import com.swsbt.secret.model.DatabaseHelper;
-import com.swsbt.secret.adapter.DiaryAdapter;
+import com.swsbt.secret.helper.adapter.DiaryAdapter;
 import com.swsbt.secret.R;
 import com.swsbt.secret.ui.widget.ConfirmDialog;
 import com.swsbt.secret.ui.widget.ItemDiaryPopupMenu;
@@ -34,7 +34,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class MainActivity extends HomeButtonActivity {
+public class OldMainActivity extends HomeButtonActivity {
 
     private RecyclerView mRecyclerViewDiaryList;
     private DatabaseHelper mDBHelper;
@@ -218,7 +218,7 @@ public class MainActivity extends HomeButtonActivity {
     private Menu mMenu;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.tool_menu, menu);
+        getMenuInflater().inflate(R.menu.main_menu, menu);
         mMenu = menu;
         mNightTheme = AndroidConfigUtils.getBooleanValueDefaultFalse(this, KEY_NIGHT_THEME);
         if (mNightTheme) {

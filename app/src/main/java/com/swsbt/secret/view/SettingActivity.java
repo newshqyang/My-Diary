@@ -170,7 +170,7 @@ public class SettingActivity extends HomeButtonActivity {
 
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, OldMainActivity.class));
         overridePendingTransition(R.anim.left_enter, R.anim.right_exit);
     }
 }

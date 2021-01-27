@@ -1,4 +1,4 @@
-package com.swsbt.secret.model.entity;
+package com.swsbt.secret.model.local.entity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.swsbt.secret.R;
-import com.swsbt.secret.adapter.AvgEditAdapter;
+import com.swsbt.secret.helper.adapter.AvgEditAdapter;
 import com.swsbt.secret.util.CommonMethods;
 
 import java.util.ArrayList;
