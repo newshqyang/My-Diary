@@ -10,6 +10,6 @@
         android:id="@+id/switch_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/diary_item"/>
+        tools:listitem="@layout/main_diary_item"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

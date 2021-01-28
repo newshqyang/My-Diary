@@ -29,9 +29,6 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-        debug {
-
-        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -80,5 +77,5 @@ dependencies {
     implementation "com.uber.autodispose:autodispose-android:$autodispose_version"
     implementation "com.uber.autodispose:autodispose-android-archcomponents:$autodispose_version"
 
-
+    implementation 'com.github.swsbty:crasher:1.0.1'
 }

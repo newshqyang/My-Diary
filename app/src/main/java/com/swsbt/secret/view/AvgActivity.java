@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.swsbt.secret.R;
-import com.swsbt.secret.util.UUtils;
+import com.swsbt.secret.helper.utils.UUtils;
 
 public class AvgActivity extends AppCompatActivity {
 

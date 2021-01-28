@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="presenter"
+            type="com.swsbt.secret.helper.presenter.Presenter" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,7 +15,7 @@
         android:background="@color/activityBackgroundColor">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/switch_page"
+            android:id="@+id/rv"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 

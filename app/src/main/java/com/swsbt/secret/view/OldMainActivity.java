@@ -26,9 +26,9 @@ import com.swsbt.secret.helper.adapter.DiaryAdapter;
 import com.swsbt.secret.R;
 import com.swsbt.secret.ui.widget.ConfirmDialog;
 import com.swsbt.secret.ui.widget.ItemDiaryPopupMenu;
-import com.swsbt.secret.util.AndroidConfigUtils;
-import com.swsbt.secret.util.CommonMethods;
-import com.swsbt.secret.util.UUtils;
+import com.swsbt.secret.helper.utils.AndroidConfigUtils;
+import com.swsbt.secret.helper.utils.CommonMethods;
+import com.swsbt.secret.helper.utils.UUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;

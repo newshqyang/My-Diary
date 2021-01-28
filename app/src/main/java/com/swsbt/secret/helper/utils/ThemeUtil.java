@@ -1,4 +1,4 @@
-package com.swsbt.secret.util;
+package com.swsbt.secret.helper.utils;
 
 import android.app.Activity;
 import android.graphics.Color;

@@ -21,11 +21,11 @@ import com.swsbt.secret.model.DatabaseHelper;
 import com.swsbt.secret.R;
 import com.swsbt.secret.model.HomeButtonActivity;
 import com.swsbt.secret.model.local.entity.AvgEditorBar;
-import com.swsbt.secret.util.DateUtils;
+import com.swsbt.secret.helper.utils.DateUtils;
 
 
-import static com.swsbt.secret.util.CommonMethods.BackupSQL;
-import static com.swsbt.secret.util.CommonMethods.CopyFile;
+import static com.swsbt.secret.helper.utils.CommonMethods.BackupSQL;
+import static com.swsbt.secret.helper.utils.CommonMethods.CopyFile;
 
 public class WriteAvgActivity extends HomeButtonActivity implements View.OnClickListener {
 

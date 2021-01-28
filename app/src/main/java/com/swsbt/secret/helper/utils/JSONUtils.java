@@ -1,4 +1,4 @@
-package com.swsbt.secret.util;
+package com.swsbt.secret.helper.utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
