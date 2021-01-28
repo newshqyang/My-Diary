@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
 
-    <com.swsbt.secret.model.entity.AvgEditorBar
+    <com.swsbt.secret.model.local.entity.AvgEditorBar
         android:id="@+id/avg_editor_bar"
         android:layout_weight="1"
         android:layout_width="match_parent"

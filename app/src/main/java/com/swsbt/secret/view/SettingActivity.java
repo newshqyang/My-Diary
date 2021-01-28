@@ -18,12 +18,12 @@ import com.swsbt.secret.dal.SQLConstant;
 import com.swsbt.secret.model.DatabaseHelper;
 import com.swsbt.secret.R;
 import com.swsbt.secret.model.HomeButtonActivity;
-import com.swsbt.secret.util.CommonMethods;
+import com.swsbt.secret.helper.utils.CommonMethods;
 
 import java.io.File;
 import java.io.IOException;
 
-import static com.swsbt.secret.util.CommonMethods.RecoverSQL;
+import static com.swsbt.secret.helper.utils.CommonMethods.RecoverSQL;
 
 public class SettingActivity extends HomeButtonActivity {
 

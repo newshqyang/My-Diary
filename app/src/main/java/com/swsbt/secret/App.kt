@@ -2,6 +2,7 @@ package com.swsbt.secret
 
 import androidx.multidex.MultiDexApplication
 import com.swsbt.secret.model.local.AppDatabase
+import io.ysq.crasher.helper.util.CrashHandler
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -19,6 +20,8 @@ class App : MultiDexApplication() {
         }
 
         AppDatabase.init(this)
+
+        CrashHandler.init(this)
     }
 
 }
