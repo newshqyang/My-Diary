@@ -33,12 +33,12 @@ import com.swsbt.secret.model.DatabaseHelper;
 import com.swsbt.secret.R;
 import com.swsbt.secret.model.HomeButtonActivity;
 import com.swsbt.secret.model.local.entity.Diary;
-import com.swsbt.secret.util.AndroidConfigUtils;
-import com.swsbt.secret.util.AndroidFileUtils;
-import com.swsbt.secret.util.CommonMethods;
-import com.swsbt.secret.util.DateUtils;
-import com.swsbt.secret.util.ImageUtils;
-import com.swsbt.secret.util.JSONUtils;
+import com.swsbt.secret.helper.utils.AndroidConfigUtils;
+import com.swsbt.secret.helper.utils.AndroidFileUtils;
+import com.swsbt.secret.helper.utils.CommonMethods;
+import com.swsbt.secret.helper.utils.DateUtils;
+import com.swsbt.secret.helper.utils.ImageUtils;
+import com.swsbt.secret.helper.utils.JSONUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -47,10 +47,10 @@ import java.io.File;
 import java.util.HashSet;
 import java.util.Set;
 
-import static com.swsbt.secret.util.CommonMethods.BackupSQL;
-import static com.swsbt.secret.util.CommonMethods.CopyFile;
-import static com.swsbt.secret.util.CommonMethods.SearchKeyCodeWritePage;
-import static com.swsbt.secret.util.CommonMethods.WRITE_HIGHLIGHT_CANCEL;
+import static com.swsbt.secret.helper.utils.CommonMethods.BackupSQL;
+import static com.swsbt.secret.helper.utils.CommonMethods.CopyFile;
+import static com.swsbt.secret.helper.utils.CommonMethods.SearchKeyCodeWritePage;
+import static com.swsbt.secret.helper.utils.CommonMethods.WRITE_HIGHLIGHT_CANCEL;
 
 public class WriteActivity extends HomeButtonActivity implements View.OnClickListener {
 
@@ -285,7 +285,7 @@ public class WriteActivity extends HomeButtonActivity implements View.OnClickLis
     创建小图片布局
      */
     private RelativeLayout createPictureLayout(final String picturePath) {
-        final RelativeLayout pictureLayout = (RelativeLayout) RelativeLayout.inflate(this, R.layout.layout_picture, null);
+        final RelativeLayout pictureLayout = (RelativeLayout) RelativeLayout.inflate(this, R.layout.write_pic_item, null);
         ImageView picture = pictureLayout.findViewById(R.id.imageView_picture);
         Bitmap bitmap = BitmapFactory.decodeFile(AndroidFileUtils.getFileFromUri(this, Uri.fromFile(new File(picturePath))).getAbsolutePath());
         picture.setImageBitmap(ImageUtils.cutBitmap(bitmap));

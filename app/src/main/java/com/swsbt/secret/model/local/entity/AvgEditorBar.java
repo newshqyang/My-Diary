@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.swsbt.secret.R;
 import com.swsbt.secret.helper.adapter.AvgEditAdapter;
-import com.swsbt.secret.util.CommonMethods;
+import com.swsbt.secret.helper.utils.CommonMethods;
 
 import java.util.ArrayList;
 import java.util.List;

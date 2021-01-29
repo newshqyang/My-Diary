@@ -15,7 +15,7 @@ interface DiaryDao {
     fun insert(diary: DiaryEntity)
 
     /* 模糊查询、分页查询所有日记的基本数据 */
-    @Query("SELECT id, title, date FROM diaries WHERE title LIKE '%'|| :title ||'%' OR content LIKE '%'|| :content ||'%' limit :page offset :page * :pageSize")
+    @Query("SELECT * FROM diaries WHERE title LIKE '%'|| :title ||'%' OR content LIKE '%'|| :content ||'%' limit :page offset :page * :pageSize")
     fun getBaseData(title: String, content:String, page: Int, pageSize: Int): Single<List<DiaryEntity>>
 
     /* 查询日记的数据 */

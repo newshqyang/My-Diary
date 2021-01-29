@@ -6,7 +6,7 @@
     android:background="@android:color/black"
     tools:context=".view.ImageActivity">
 
-    <com.swsbt.secret.model.entity.DragScaleView
+    <com.swsbt.secret.model.local.entity.DragScaleView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

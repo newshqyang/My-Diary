@@ -17,7 +17,7 @@ import com.swsbt.secret.model.local.entity.DiaryViewHolder;
 import java.util.Calendar;
 import java.util.List;
 
-import static com.swsbt.secret.util.CommonMethods.MonthTranslate;
+import static com.swsbt.secret.helper.utils.CommonMethods.MonthTranslate;
 
 public class DiaryAdapter extends RecyclerView.Adapter<DiaryViewHolder> {
 
@@ -63,7 +63,7 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryViewHolder> {
     @NonNull
     @Override
     public DiaryViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        return new DiaryViewHolder(mLayoutInflater.inflate(R.layout.diary_item,viewGroup,false));
+        return new DiaryViewHolder(mLayoutInflater.inflate(R.layout.main_diary_item,viewGroup,false));
     }
 
     @SuppressLint("SetTextI18n")

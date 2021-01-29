@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="item"
+            type="com.swsbt.secret.view.main.viewmodel.DiaryItemWrapper" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:layout_marginBottom="0.1dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <TextView
+            tools:visibility="gone"
+            android:id="@+id/dateline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundColor"
+            android:gravity="center"
+            android:padding="5dp"
+            tools:text="-  2012年12月  -"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            tools:text="27"
+            android:textColor="@color/colorHintFont"
+            android:textSize="16sp"
+            android:typeface="serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateline" />
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="16dp"
+            tools:text="Apr"
+            android:textColor="@color/colorMonthFont"
+            android:textSize="15sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/day" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            tools:text="10:49"
+            android:textColor="@color/colorMonthFont"
+            android:textSize="15sp"
+            android:typeface="serif"
+            app:layout_constraintStart_toEndOf="@+id/day"
+            app:layout_constraintTop_toBottomOf="@+id/dateline" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            tools:text="原标题：顶一下直面媒..."
+            android:textColor="@color/colorHintFont"
+            android:textSize="17sp"
+            android:typeface="serif"
+            app:layout_constraintStart_toEndOf="@+id/month"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

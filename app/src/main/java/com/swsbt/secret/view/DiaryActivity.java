@@ -16,10 +16,10 @@ import com.swsbt.secret.bll.SQLOperate;
 import com.swsbt.secret.dal.SQLConstant;
 import com.swsbt.secret.model.HomeButtonActivity;
 import com.swsbt.secret.model.local.entity.Diary;
-import com.swsbt.secret.util.CommonMethods;
-import com.swsbt.secret.util.DateUtils;
-import com.swsbt.secret.util.ImageUtils;
-import com.swsbt.secret.util.JSONUtils;
+import com.swsbt.secret.helper.utils.CommonMethods;
+import com.swsbt.secret.helper.utils.DateUtils;
+import com.swsbt.secret.helper.utils.ImageUtils;
+import com.swsbt.secret.helper.utils.JSONUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

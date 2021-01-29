@@ -6,6 +6,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
+import com.swsbt.secret.BR
 import com.swsbt.secret.helper.presenter.Presenter
 
 abstract class BaseActivity<VB: ViewDataBinding>: AppCompatActivity(), Presenter {
@@ -19,19 +20,19 @@ abstract class BaseActivity<VB: ViewDataBinding>: AppCompatActivity(), Presenter
 
     abstract fun getLayoutId(): Int
 
-    abstract fun loadDate(isRefresh: Boolean)
+    abstract fun loadData(isRefresh: Boolean)
 
     abstract fun initView()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-        mBinding.setVariable(BR.presenter, this)
+        mBinding.setVariable(BR._all, this)
         mBinding.executePendingBindings()
 
         initView()
         initEvent()
-        loadDate(true)
+        loadData(true)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
