@@ -1,6 +1,5 @@
 package com.swsbt.secret.view.main
 
-import android.content.Intent
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -11,10 +10,10 @@ import com.swsbt.secret.helper.adapter.BindingViewAdapter
 import com.swsbt.secret.helper.adapter.SingleTypeAdapter
 import com.swsbt.secret.helper.extens.bindLifeCycle
 import com.swsbt.secret.helper.extens.navigateTo
-import com.swsbt.secret.view.WriteActivity
 import com.swsbt.secret.view.base.BaseActivity
 import com.swsbt.secret.view.main.viewmodel.DiaryItemWrapper
 import com.swsbt.secret.view.main.viewmodel.MainViewModel
+import com.swsbt.secret.view.write.WriteActivity
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class MainActivity : BaseActivity<MainActivityBinding>(), BindingViewAdapter.ItemClickPresenter<DiaryItemWrapper> {
