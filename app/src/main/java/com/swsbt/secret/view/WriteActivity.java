@@ -285,7 +285,7 @@ public class WriteActivity extends HomeButtonActivity implements View.OnClickLis
     创建小图片布局
      */
     private RelativeLayout createPictureLayout(final String picturePath) {
-        final RelativeLayout pictureLayout = (RelativeLayout) RelativeLayout.inflate(this, R.layout.layout_picture, null);
+        final RelativeLayout pictureLayout = (RelativeLayout) RelativeLayout.inflate(this, R.layout.write_pic_item, null);
         ImageView picture = pictureLayout.findViewById(R.id.imageView_picture);
         Bitmap bitmap = BitmapFactory.decodeFile(AndroidFileUtils.getFileFromUri(this, Uri.fromFile(new File(picturePath))).getAbsolutePath());
         picture.setImageBitmap(ImageUtils.cutBitmap(bitmap));

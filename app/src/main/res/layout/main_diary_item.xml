@@ -25,7 +25,6 @@
             android:background="@color/backgroundColor"
             android:gravity="center"
             android:padding="5dp"
-            android:text="@{item.da}"
             tools:text="-  2012年12月  -"
             android:textColor="@android:color/darker_gray"
             android:textSize="15sp"

@@ -18,4 +18,5 @@
 
     <string name="item_diary_delete_confirm">您确定要移除这篇日记吗？</string>
     <string name="item_diary_edit_confirm">您确定要对自己写过的日记进行编辑吗？</string>
+    <string name="write_ok">完成</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.swsbt.secret
 
 import androidx.multidex.MultiDexApplication
+import com.swsbt.secret.helper.utils.BaseUtil
 import com.swsbt.secret.model.local.AppDatabase
 import io.ysq.crasher.helper.util.CrashHandler
 import org.koin.android.ext.koin.androidContext
@@ -12,6 +13,8 @@ class App : MultiDexApplication() {
 
     override fun onCreate() {
         super.onCreate()
+
+        BaseUtil.init(this)
 
         startKoin {
             androidLogger(Level.ERROR)
