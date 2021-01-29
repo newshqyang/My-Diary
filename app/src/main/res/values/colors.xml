@@ -26,5 +26,5 @@
     <color name="black_overlay">#66000000</color>
     <color name="colorRice">#f8f6e7</color>
     <color name="backgroundColor">@android:color/white</color>
-    <color name="activityBackgroundColor">#F6F6F6</color>
+    <color name="activityBackgroundColor">#FFFFFF</color>
 </resources>

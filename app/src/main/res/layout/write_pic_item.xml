@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.swsbt.secret.view.write.viewmodel.PictureItemWrapper" />
+
+        <variable
+            name="itemPresenter"
+            type="com.swsbt.secret.helper.adapter.BindingViewAdapter.ItemClickPresenter" />
+        
+    </data>
+    
+    <RelativeLayout
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/imageView_picture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cutPath200="@{item.p}"
+            android:background="@drawable/card_bg"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/cancel_ib"
+            android:onClick="@{(v)->itemPresenter.onItemClick(v, item)}"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="30dp"
+            android:background="#CDB6B6B6"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cancel"
+            android:layout_marginLeft="30dp" />
+
+    </RelativeLayout>
+
+</layout>
