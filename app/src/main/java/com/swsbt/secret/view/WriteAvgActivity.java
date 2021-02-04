@@ -21,7 +21,7 @@ import com.swsbt.secret.model.DatabaseHelper;
 import com.swsbt.secret.R;
 import com.swsbt.secret.model.HomeButtonActivity;
 import com.swsbt.secret.model.local.entity.AvgEditorBar;
-import com.swsbt.secret.helper.utils.DateUtils;
+import com.swsbt.secret.helper.utils.DateUtil;
 
 
 import static com.swsbt.secret.helper.utils.CommonMethods.BackupSQL;
@@ -64,7 +64,7 @@ public class WriteAvgActivity extends HomeButtonActivity implements View.OnClick
         //获取写作时间
         date = sharedPreferences.getLong("date", 0);
         date = date == 0 ? System.currentTimeMillis() : date;
-        setTitle(DateUtils.convertYMDatetime(date));
+        setTitle(DateUtil.convertYMDatetime(date));
     }
 
     //动态获取读写权限

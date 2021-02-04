@@ -1,23 +1,32 @@
 package com.swsbt.secret.view.main
 
-import android.content.Intent
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.swsbt.secret.R
 import com.swsbt.secret.databinding.MainActivityBinding
 import com.swsbt.secret.helper.adapter.BindingViewAdapter
 import com.swsbt.secret.helper.adapter.SingleTypeAdapter
+import com.swsbt.secret.helper.extens.async
 import com.swsbt.secret.helper.extens.bindLifeCycle
 import com.swsbt.secret.helper.extens.navigateTo
-import com.swsbt.secret.view.WriteActivity
+import com.swsbt.secret.model.local.AppDatabase
+import com.swsbt.secret.model.local.entity.DiaryEntity
 import com.swsbt.secret.view.base.BaseActivity
 import com.swsbt.secret.view.main.viewmodel.DiaryItemWrapper
 import com.swsbt.secret.view.main.viewmodel.MainViewModel
+import com.swsbt.secret.view.write.WriteActivity
+import io.reactivex.Single
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class MainActivity : BaseActivity<MainActivityBinding>(), BindingViewAdapter.ItemClickPresenter<DiaryItemWrapper> {
+
+    private val TAG = "MainActivity"
 
     private val mViewModel: MainViewModel by viewModel()
 
@@ -39,19 +48,17 @@ class MainActivity : BaseActivity<MainActivityBinding>(), BindingViewAdapter.Ite
             .subscribe({
                 if (it.isNotEmpty()) {
                     mViewModel.render(it)
+                } else {
+                    Log.d(TAG, "loadData: 空的")
                 }
             }, {
-
+                Log.e(TAG, "loadData: 错误", it)
             })
-    }
-
-    override fun onResume() {
-        super.onResume()
-        loadData(true)
     }
 
     override fun initView() {
         mBinding.apply {
+            presenter = this@MainActivity
             rv.apply {
                 layoutManager = LinearLayoutManager(mContext)
                 adapter = mAdapter

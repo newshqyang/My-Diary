@@ -17,18 +17,19 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.swsbt.secret.R;
 import com.swsbt.secret.dal.DiaryConfig;
 import com.swsbt.secret.dal.SQLConstant;
-import com.swsbt.secret.model.HomeButtonActivity;
-import com.swsbt.secret.model.local.entity.Diary;
-import com.swsbt.secret.model.DatabaseHelper;
 import com.swsbt.secret.helper.adapter.DiaryAdapter;
-import com.swsbt.secret.R;
-import com.swsbt.secret.ui.widget.ConfirmDialog;
-import com.swsbt.secret.ui.widget.ItemDiaryPopupMenu;
 import com.swsbt.secret.helper.utils.AndroidConfigUtils;
 import com.swsbt.secret.helper.utils.CommonMethods;
 import com.swsbt.secret.helper.utils.UUtils;
+import com.swsbt.secret.model.DatabaseHelper;
+import com.swsbt.secret.model.HomeButtonActivity;
+import com.swsbt.secret.model.local.entity.Diary;
+import com.swsbt.secret.ui.widget.ConfirmDialog;
+import com.swsbt.secret.ui.widget.ItemDiaryPopupMenu;
+import com.swsbt.secret.view.write.WriteActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;

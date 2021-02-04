@@ -1,6 +1,7 @@
 package com.swsbt.secret
 
 import androidx.multidex.MultiDexApplication
+import com.facebook.stetho.Stetho
 import com.swsbt.secret.helper.utils.BaseUtil
 import com.swsbt.secret.model.local.AppDatabase
 import io.ysq.crasher.helper.util.CrashHandler
@@ -25,6 +26,10 @@ class App : MultiDexApplication() {
         AppDatabase.init(this)
 
         CrashHandler.init(this)
+
+        if (BuildConfig.DEBUG) {
+            Stetho.initializeWithDefaults(this)
+        }
     }
 
 }
