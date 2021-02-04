@@ -27,7 +27,7 @@ abstract class BaseActivity<VB: ViewDataBinding>: AppCompatActivity(), Presenter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-        mBinding.setVariable(BR._all, this)
+        mBinding.setVariable(BR.presenter, this)
         mBinding.executePendingBindings()
 
         initView()

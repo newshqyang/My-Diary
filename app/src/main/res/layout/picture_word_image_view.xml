@@ -20,7 +20,6 @@
         android:layout_height="100dp"
         android:background="@drawable/textboard_background"
         android:padding="15dp"
-        android:text="请..对我..温柔一点..."
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

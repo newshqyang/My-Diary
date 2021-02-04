@@ -17,7 +17,7 @@ import com.swsbt.secret.dal.SQLConstant;
 import com.swsbt.secret.model.HomeButtonActivity;
 import com.swsbt.secret.model.local.entity.Diary;
 import com.swsbt.secret.helper.utils.CommonMethods;
-import com.swsbt.secret.helper.utils.DateUtils;
+import com.swsbt.secret.helper.utils.DateUtil;
 import com.swsbt.secret.helper.utils.ImageUtils;
 import com.swsbt.secret.helper.utils.JSONUtils;
 
@@ -52,7 +52,7 @@ public class DiaryActivity extends HomeButtonActivity {
     @SuppressLint("SetTextI18n")
     private void initArticle(int id) {
         final Diary articleItem = SQLOperate.getArticleInfo(this, id);
-        setTitle(DateUtils.getYMDHM(Long.parseLong(articleItem.getDate())));
+        setTitle(DateUtil.getYMDHM(Long.parseLong(articleItem.getDate())));
         //日记内容
         String content = CommonMethods.QUERY_DATA(this, SQLConstant.DATABASE_NAME,SQLConstant.TABLE_NAME_ARTICLE, "id=?", "" + articleItem.getId(),"content");
         mTextViewContent.setText(content);

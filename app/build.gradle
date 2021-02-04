@@ -78,4 +78,8 @@ dependencies {
     implementation "com.uber.autodispose:autodispose-android-archcomponents:$autodispose_version"
 
     implementation 'com.github.swsbty:crasher:1.0.1'
+    implementation 'com.github.swsbty:widgetz:1.0.1'
+
+    //引入这个依赖，可以在chromium内核的浏览器远程查看设备的数据库
+    implementation 'com.facebook.stetho:stetho:1.5.1'
 }

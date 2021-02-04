@@ -22,12 +22,6 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
-        <io.ysq.widget.ClearEditTextKt
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:text="测试测试"
-            />
-
     </LinearLayout>
 
 </layout>
