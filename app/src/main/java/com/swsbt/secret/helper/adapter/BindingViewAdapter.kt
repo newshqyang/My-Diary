@@ -14,8 +14,6 @@ abstract class BindingViewAdapter<T>(context: Context, protected val list: Obser
 
     var itemPresenter: ItemClickPresenter<T>? = null
 
-    var itemLongPresenter: ItemLongClickPresenter<T>? = null
-
     var itemDecorator: ItemDecorator? = null
 
     override fun onBindViewHolder(holder: BindingViewHolder<ViewDataBinding>, position: Int) {
@@ -23,7 +21,6 @@ abstract class BindingViewAdapter<T>(context: Context, protected val list: Obser
         holder.let {
             it.binding.setVariable(BR.item, item)
             it.binding.setVariable(BR.presenter, itemPresenter)
-            it.binding.setVariable(BR.presenter, itemLongPresenter)
             it.binding.executePendingBindings()
         }
         itemDecorator?.decorator(holder, position, getItemViewType(position))

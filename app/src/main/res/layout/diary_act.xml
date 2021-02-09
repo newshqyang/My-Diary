@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.swsbt.secret.view.diary.viewmodel.DiaryViewModel" />
+        <variable
+            name="presenter"
+            type="com.swsbt.secret.helper.presenter.Presenter" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activityBackgroundColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@{vm.content}"
+                android:textColor="@color/colorFont"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:lineSpacingExtra="5dp"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"/>
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@{vm.date}"/>
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

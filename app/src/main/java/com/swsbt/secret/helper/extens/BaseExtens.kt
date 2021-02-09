@@ -1,7 +1,5 @@
 package com.swsbt.secret.helper.extens
 
-import android.os.Handler
-import android.util.Log
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import com.uber.autodispose.AutoDispose

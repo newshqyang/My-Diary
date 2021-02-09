@@ -5,6 +5,9 @@
 
     <data>
         <variable
+            name="presenter"
+            type="com.swsbt.secret.helper.adapter.BindingViewAdapter.ItemClickPresenter" />
+        <variable
             name="item"
             type="com.swsbt.secret.view.main.viewmodel.DiaryItemWrapper" />
     </data>
@@ -13,8 +16,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="@{(v)->presenter.onItemClick(v, item)}"
             android:background="@color/backgroundColor"
             android:layout_marginBottom="0.1dp"
             android:foreground="?android:attr/selectableItemBackground"
@@ -29,6 +34,8 @@
                 android:gravity="center"
                 android:padding="5dp"
                 tools:text="-  2012年12月  -"
+                android:text="@{item.ym}"
+                visibleGone="@{item.sym}"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="15sp"
                 android:typeface="serif"

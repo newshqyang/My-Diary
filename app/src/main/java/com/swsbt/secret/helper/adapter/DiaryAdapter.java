@@ -17,7 +17,7 @@ import com.swsbt.secret.model.local.entity.DiaryViewHolder;
 import java.util.Calendar;
 import java.util.List;
 
-import static com.swsbt.secret.helper.utils.DateUtil.MonthTranslate;
+import static com.swsbt.secret.helper.utils.old.DateUtil.MonthTranslate;
 
 
 public class DiaryAdapter extends RecyclerView.Adapter<DiaryViewHolder> {

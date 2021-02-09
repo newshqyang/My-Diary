@@ -1,4 +1,4 @@
-package com.swsbt.secret.helper.utils;
+package com.swsbt.secret.helper.utils.old;
 
 import android.annotation.SuppressLint;
 
@@ -11,7 +11,7 @@ public class DateUtil {
      * 获取年月
      */
     public static String ym(Calendar calendar) {
-        return "-  " + calendar.get(Calendar.YEAR) + "年" + calendar.get(Calendar.MONTH) + "月  -";
+        return "-  " + calendar.get(Calendar.YEAR) + "年" + (calendar.get(Calendar.MONTH) + 1) + "月  -";
     }
 
     /**
