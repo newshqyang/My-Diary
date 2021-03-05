@@ -76,8 +76,7 @@
                             android:padding="5dp"
                             android:onClick="@{(v)->presenter.onClick(v)}"
                             android:layout_marginEnd="10dp"
-                            android:src="@drawable/pictures"
-                            android:layout_marginRight="10dp" />
+                            android:src="@drawable/pictures" />
                         <ImageView
                             android:id="@+id/tab_iv"
                             android:layout_width="30dp"
@@ -138,12 +137,10 @@
                         android:gravity="center"
                         android:text="@string/write_ok"
                         android:textSize="16sp"
-                        android:enabled="false"
                         android:typeface="serif"
                         android:onClick="@{(v)->presenter.onClick(v)}"
                         android:background="@drawable/button_all_right_background_disabled"
-                        android:textColor="@android:color/white"
-                        android:layout_alignParentRight="true" />
+                        android:textColor="@android:color/white"/>
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>

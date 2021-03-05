@@ -72,4 +72,9 @@ class MainActivity : BaseActivity<MainActBinding>(), BindingViewAdapter.ItemClic
             }
         }
     }
+
+    override fun onResume() {
+        super.onResume()
+        loadData(true)
+    }
 }

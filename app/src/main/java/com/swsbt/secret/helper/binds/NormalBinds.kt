@@ -24,5 +24,5 @@ fun bindCutPath(imageView: ImageView, path: String) {
 /* 图片自动裁切 */
 @BindingAdapter(value = ["cutPath200"])
 fun bindCutPath2(imageView: ImageView, path: String) {
-    ImageUtil.load(ImageUtil.cut(path, 200), imageView)
+    ImageUtil.load(path, imageView)
 }

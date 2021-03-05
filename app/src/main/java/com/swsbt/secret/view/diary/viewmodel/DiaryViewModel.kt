@@ -1,5 +1,6 @@
 package com.swsbt.secret.view.diary.viewmodel
 
+import android.util.Log
 import androidx.databinding.ObservableArrayList
 import androidx.databinding.ObservableField
 import androidx.lifecycle.ViewModel
@@ -18,6 +19,7 @@ class DiaryViewModel(val repo: DiaryRepository) : ViewModel() {
 
     fun getDiary() = CoroutineScope(Dispatchers.Main).launch {
         val r = repo.get(id)
+        Log.d("DVM", "getDiary: ${r.content}")
         content.set(r.content)
         date.set(DateUtil.str(r.date))
     }
