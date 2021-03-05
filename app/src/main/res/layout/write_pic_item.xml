@@ -10,7 +10,7 @@
             type="com.swsbt.secret.view.write.viewmodel.PictureItemWrapper" />
 
         <variable
-            name="itemPresenter"
+            name="presenter"
             type="com.swsbt.secret.helper.adapter.BindingViewAdapter.ItemClickPresenter" />
         
     </data>
@@ -32,14 +32,13 @@
 
         <ImageButton
             android:id="@+id/cancel_ib"
-            android:onClick="@{(v)->itemPresenter.onItemClick(v, item)}"
+            android:onClick="@{(v)->presenter.onItemClick(v, item)}"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginStart="30dp"
             android:background="#CDB6B6B6"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/cancel"
-            android:layout_marginLeft="30dp" />
+            app:srcCompat="@drawable/cancel" />
 
     </RelativeLayout>
 

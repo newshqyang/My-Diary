@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.swsbt.secret"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 28
         versionName "1.8.0"

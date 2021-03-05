@@ -9,7 +9,11 @@ import androidx.room.PrimaryKey
  */
 
 @Entity(tableName = "diaries")
-data class DiaryEntity(var title: String, var content: String, var date: Long, var picturePaths: String) {
+data class DiaryEntity(
+    var title: String = "",
+    var content: String = "",
+    var date: Long,
+    var picturePaths: String = "") {
 
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
