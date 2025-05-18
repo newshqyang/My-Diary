@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out code...'
-                git url: 'https://github.com/newshqyang/My-Diary.git' branch: 'master'
+                git url: 'https://github.com/newshqyang/My-Diary.git', branch: 'master'
             }
         }
         stage('Build') {
