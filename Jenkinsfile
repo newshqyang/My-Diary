@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh '.gradlew assembleRelease'
+                sh './gradlew assembleRelease'
             }
         }
         stage('Archive APK') {
