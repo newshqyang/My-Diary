@@ -19,7 +19,6 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.WindowManager;
 
-
 import androidx.core.app.ActivityCompat;
 
 import java.io.File;

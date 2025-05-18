@@ -1,11 +1,80 @@
-package com.swsbt.secret.helper.utils;
+package com.swsbt.secret.helper.utils.old;
 
 import android.annotation.SuppressLint;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class DateUtils {
+public class DateUtil {
+
+    /**
+     * 获取年月
+     */
+    public static String ym(Calendar calendar) {
+        return "-  " + calendar.get(Calendar.YEAR) + "年" + (calendar.get(Calendar.MONTH) + 1) + "月  -";
+    }
+
+    /**
+     * 获取时间
+     * @param calendar
+     * @return
+     */
+    public static String time(Calendar calendar) {
+        return calendar.get(Calendar.HOUR_OF_DAY) + ":" + calendar.get(Calendar.MINUTE);
+    }
+
+    /**
+     * 获取月份英文缩写
+     * @param calendar
+     * @return 英文缩写
+     */
+    public static String monAbb(Calendar calendar) {
+        return MonthTranslate(calendar.get(Calendar.MONTH) + 1);
+    }
+
+    public static String MonthTranslate(int month_number){
+        //数字月份转英文缩写
+        String translate_result = "";
+        switch (month_number){
+            case 1:
+                translate_result = "Jan";
+                break;
+            case 2:
+                translate_result = "Feb";
+                break;
+            case 3:
+                translate_result = "Mar";
+                break;
+            case 4:
+                translate_result = "Apr";
+                break;
+            case 5:
+                translate_result = "May";
+                break;
+            case 6:
+                translate_result = "Jun";
+                break;
+            case 7:
+                translate_result = "Jul";
+                break;
+            case 8:
+                translate_result = "Aug";
+                break;
+            case 9:
+                translate_result = "Sep";
+                break;
+            case 10:
+                translate_result = "Oct";
+                break;
+            case 11:
+                translate_result = "Nov";
+                break;
+            case 12:
+                translate_result = "Dec";
+                break;
+        }
+        return translate_result;
+    }
 
     /*
     获取时间，格式：年月日 时分

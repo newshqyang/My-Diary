@@ -13,10 +13,10 @@
         android:layout_marginEnd="15dp"
         android:orientation="vertical">
         <TextView
-            android:id="@+id/textView_content"
+            android:id="@+id/content_tv"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="@string/backup_notice"
+            android:text="@{vm.content}"
             android:textColor="@color/colorFont"
             android:layout_weight="1"
             android:textSize="17sp"
@@ -24,7 +24,7 @@
             android:typeface="serif" />
 
         <LinearLayout
-            android:id="@+id/linearLayout_row"
+            android:id="@+id/pic_ll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"

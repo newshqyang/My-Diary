@@ -24,3 +24,13 @@ fun <T> Single<T>.bindLifeCycle(owner: LifecycleOwner): SingleSubscribeProxy<T> 
 fun <T> Observable<T>.bindLifeCycle(owner: LifecycleOwner): ObservableSubscribeProxy<T> {
     return this.`as`(AutoDispose.autoDisposable(AndroidLifecycleScopeProvider.from(owner, Lifecycle.Event.ON_DESTROY)))
 }
+
+
+/* 延时执行方法，默认延时 1 秒 */
+fun setInterval(function: ()->Unit, delayMillisTime: Long = 1000) = Single.just(true)
+        .async(delayMillisTime)
+        .subscribe({
+            function()
+        }, {
+
+        })

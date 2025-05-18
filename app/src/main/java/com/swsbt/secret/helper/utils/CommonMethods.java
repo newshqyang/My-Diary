@@ -133,50 +133,6 @@ public class CommonMethods {
         return translate_result;
     }
 
-    public static String MonthTranslate(int month_number){
-        //数字月份转英文缩写
-        String translate_result = "";
-        switch (month_number){
-            case 1:
-                translate_result = "Jan";
-                break;
-            case 2:
-                translate_result = "Feb";
-                break;
-            case 3:
-                translate_result = "Mar";
-                break;
-            case 4:
-                translate_result = "Apr";
-                break;
-            case 5:
-                translate_result = "May";
-                break;
-            case 6:
-                translate_result = "Jun";
-                break;
-            case 7:
-                translate_result = "Jul";
-                break;
-            case 8:
-                translate_result = "Aug";
-                break;
-            case 9:
-                translate_result = "Sep";
-                break;
-            case 10:
-                translate_result = "Oct";
-                break;
-            case 11:
-                translate_result = "Nov";
-                break;
-            case 12:
-                translate_result = "Dec";
-                break;
-        }
-        return translate_result;
-    }
-
     //备份时需要用到的权限
     private static String[] PERMISSIONS_STORAGE = {
             Manifest.permission.READ_EXTERNAL_STORAGE,

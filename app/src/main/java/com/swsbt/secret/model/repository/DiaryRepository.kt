@@ -7,5 +7,7 @@ class DiaryRepository(private val local: DiaryDao) {
 
     fun insert(diary: DiaryEntity) = local.insert(diary)
 
-    fun getData(title: String, content: String, page: Int, pageSize: Int) = local.getBaseData(title, content, page, pageSize)
+    suspend fun snapshotData(key: String, page: Int, pageSize: Int) = local.snapshotData(key, page, pageSize)
+
+    suspend fun get(id: Int) = local.get(id)
 }

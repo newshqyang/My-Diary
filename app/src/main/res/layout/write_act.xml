@@ -33,15 +33,14 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@={vm.content}"
-                tools:text="今天组织了线上班会。"
+                tools:text="今天组织了线上班会。\n今天组织了线上班会\n今天组织了线上班会"
                 android:gravity="top"
                 android:typeface="serif"
                 android:textSize="16sp"
                 android:textColor="@color/colorFont"
-                android:linedpacingExtra="5dp"
+                android:lineSpacingExtra="5dp"
                 android:background="@android:color/transparent"
-                android:layout_marginBottom="50dp"
-                tools:ignore="NestedWeights" />
+                android:layout_marginBottom="50dp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_pic"
@@ -77,8 +76,7 @@
                             android:padding="5dp"
                             android:onClick="@{(v)->presenter.onClick(v)}"
                             android:layout_marginEnd="10dp"
-                            android:src="@drawable/pictures"
-                            android:layout_marginRight="10dp" />
+                            android:src="@drawable/pictures" />
                         <ImageView
                             android:id="@+id/tab_iv"
                             android:layout_width="30dp"
@@ -139,12 +137,10 @@
                         android:gravity="center"
                         android:text="@string/write_ok"
                         android:textSize="16sp"
-                        android:enabled="false"
                         android:typeface="serif"
                         android:onClick="@{(v)->presenter.onClick(v)}"
                         android:background="@drawable/button_all_right_background_disabled"
-                        android:textColor="@android:color/white"
-                        android:layout_alignParentRight="true" />
+                        android:textColor="@android:color/white"/>
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>

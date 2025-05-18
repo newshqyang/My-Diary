@@ -1,23 +1,26 @@
 package com.swsbt.secret.view.main
 
-import android.content.Intent
+import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.swsbt.secret.R
-import com.swsbt.secret.databinding.MainActivityBinding
+import com.swsbt.secret.databinding.MainActBinding
 import com.swsbt.secret.helper.adapter.BindingViewAdapter
 import com.swsbt.secret.helper.adapter.SingleTypeAdapter
-import com.swsbt.secret.helper.extens.bindLifeCycle
 import com.swsbt.secret.helper.extens.navigateTo
-import com.swsbt.secret.view.WriteActivity
 import com.swsbt.secret.view.base.BaseActivity
+import com.swsbt.secret.view.diary.DiaryActivity
 import com.swsbt.secret.view.main.viewmodel.DiaryItemWrapper
 import com.swsbt.secret.view.main.viewmodel.MainViewModel
+import com.swsbt.secret.view.write.WriteActivity
 import org.koin.android.viewmodel.ext.android.viewModel
 
-class MainActivity : BaseActivity<MainActivityBinding>(), BindingViewAdapter.ItemClickPresenter<DiaryItemWrapper> {
+class MainActivity : BaseActivity<MainActBinding>(), BindingViewAdapter.ItemClickPresenter<DiaryItemWrapper> {
+
+    private val TAG = "MainActivity"
 
     private val mViewModel: MainViewModel by viewModel()
 
@@ -31,27 +34,15 @@ class MainActivity : BaseActivity<MainActivityBinding>(), BindingViewAdapter.Ite
     override fun onClick(v: View) {
     }
 
-    override fun getLayoutId() = R.layout.main_activity
+    override fun getLayoutId() = R.layout.main_act
 
     override fun loadData(isRefresh: Boolean) {
-        mViewModel.getData("", "")
-            .bindLifeCycle(this)
-            .subscribe({
-                if (it.isNotEmpty()) {
-                    mViewModel.render(it)
-                }
-            }, {
-
-            })
-    }
-
-    override fun onResume() {
-        super.onResume()
-        loadData(true)
+        mViewModel.snapshotData()
     }
 
     override fun initView() {
         mBinding.apply {
+            presenter = this@MainActivity
             rv.apply {
                 layoutManager = LinearLayoutManager(mContext)
                 adapter = mAdapter
@@ -72,6 +63,18 @@ class MainActivity : BaseActivity<MainActivityBinding>(), BindingViewAdapter.Ite
     }
 
     override fun onItemClick(v: View, item: DiaryItemWrapper) {
+        when (v.id) {
+            R.id.container -> {
+                navigateTo(DiaryActivity::class.java, Bundle().apply {
+                    putInt("id", item.id)
+                    putString("title", item.title)
+                })
+            }
+        }
+    }
 
+    override fun onResume() {
+        super.onResume()
+        loadData(true)
     }
 }

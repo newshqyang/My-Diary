@@ -9,9 +9,10 @@
             type="com.swsbt.secret.helper.presenter.Presenter" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:background="@color/activityBackgroundColor">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -21,6 +22,6 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </layout>
